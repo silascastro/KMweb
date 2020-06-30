@@ -4,8 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+    
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    
+    <!-- CUSTOM STYLE -->      
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,600,900&subset=latin-ext" rel="stylesheet"> 
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
 </head>
-<body>
-    <h1>Login</h1>
+<body class="size-1140">
+    <div id="page-wrapper">
+      <!-- HEADER -->
+      <header role="banner" class="position-absolute margin-top-30 margin-m-top-0 margin-s-top-0">    
+        <!-- Top Navigation -->
+        <nav class="background-transparent background-transparent-hightlight full-width sticky">
+          <div class="s-12 l-2">
+            <a href="http://localhost:3000/" class="logo">
+              <!-- Logo version before sticky nav -->
+              <img class="logo-before" src="img/logo-dark.png" alt="">
+              <!-- Logo version after sticky nav -->
+              <img class="logo-after" src="img/logo-dark.png" alt="">
+            </a>
+          </div>
+          <div class="s-12 l-10">
+            <div class="top-nav right">
+              <p class="nav-text"></p>
+              <ul class="right chevron">
+                <li><a href="http://localhost:3000/">Home</a></li>
+                <li><a href="http://localhost:3000/about">About Us</a></li>             
+                <li><a href="http://localhost:3000/contact">Contact</a></li>
+                <li><a href="http://localhost:3000/login">Login</a></li>
+              </ul>
+            </div>
+          </div>  
+        </nav>
+      </header>
+
+        <!-- MAIN -->
+        <main role="main">
+            <article>
+                <div class="section container col-md-3">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" name="" id="">
+                            <input type="password" class="form-control" placeholder="Senha" name="" id="">
+                        </div>
+                    </form>
+                </div>
+            </article>            
+        </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <!-- Contact Us -->
+        <div class="background-dark padding text-center footer-social">
+          <a class="margin-right-10" target="_blank" href="https://www.facebook.com"><i class="icon-facebook_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">FACEBOOK</span></a>
+          <a class="margin-right-10" target="_blank" href="https://www.twitter.com"><i class="icon-twitter_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">TWITTER</span></a>
+          <a class="margin-right-10" target="_blank" href="https://www.instagram.com"><i class="icon-instagram_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">INSTAGRAM</span></a>
+          <a target="_blank" href="https://www.linkedin.com"><i class="icon-linked_in_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">LINKEDIN</span></a>                                                                         
+        </div>
+
+        <!-- Main Footer -->
+        <section class="section-small-padding text-center background-dark full-width">
+          <div class="line">
+            <div class="margin">
+              <!-- Collumn 1 -->              
+              <div class="s-12 m-12 l-4 margin-m-bottom-30">
+                <h3 class="text-size-16">Company Address</h3>
+                <p class="text-size-14">
+                   Responsive Street 7<br>
+                   London - United Kingdom<br> 
+                   Europe
+                </p>               
+              </div>
+              <!-- Collumn 2 -->
+              <div class="s-12 m-12 l-4 margin-m-bottom-30">
+                <h3 class="text-size-16">E-mail</h3>
+                <p class="text-size-14">
+                   contact@sampledomain.com<br>
+                   office@sampledomain.com
+                </p>              
+              </div>
+              <!-- Collumn 3 -->
+              <div class="s-12 m-12 l-4 ">
+                <h3 class="text-size-16">Phone Numbers</h3>
+                <p class="text-size-14">
+                   0800 4521 800 50<br>
+                   0450 5896 625 16<br>
+                   0798 6546 465 15
+                </p>             
+              </div>
+            </div>
+          </div>  
+        </section>
+        <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 0, 0, 0.80);">
+        
+        <!-- Bottom Footer -->
+        <section class="padding background-dark full-width">
+          <div class="text-center">
+            <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
+            <p class="text-size-12">All images is purchased from Bigstock. Do not use the images in your website.</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="js/jquery.events.touch.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
