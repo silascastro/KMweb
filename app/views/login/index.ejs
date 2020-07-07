@@ -77,7 +77,10 @@
                   <img class="logo-before mb-3" src="img/logo-dark.png" alt="">
                     <h2>Entrar</h2>
                     <form class="form-signin" action="login/auth" method="POST">
-                      <label for="inputEmail" class="sr-only">Email address</label>
+                            <% if(erro) { %> 
+                              <p class="alert bg-danger text-light"><%= erro_msg %>  </p>
+                            <% } %> 
+                            <label for="inputEmail" class="sr-only">Email address</label>
                             <input type="email" class="form-control" placeholder="Email" name="email" id="email" required autofocus>
                             <label for="inputPassword" class="sr-only">Password</label>
                             <input type="password" class="form-control mb-2" placeholder="Senha" name="password" id="password" required>

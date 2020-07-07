@@ -8,13 +8,13 @@ const bcrypt = require('bcrypt');
 module.exports = (app)=>{
 
     var erro = false;
-    var erro_msg = "";
+    var erro_msg = "asdasdas";
 
 
     app.get('/login',(req, res) =>{
         console.log(erro);
         console.log(erro_msg);
-        res.render("login/index");
+        res.render("login/index",{erro: erro, erro_msg: erro_msg});
     });
 
     app.post('/login/create',async(req, res) => {
@@ -46,7 +46,7 @@ module.exports = (app)=>{
                 res.redirect("/");
             }else{
                 erro = true;
-                erro_msg = "email";
+                erro_msg = "email ou senha incorretos!";
                 res.redirect('/login');
             }
         })
